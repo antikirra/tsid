@@ -1,0 +1,21 @@
+{
+  "name": "antikirra/tsid",
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Antikirra\\TSID\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Kirill Tkachenko",
+      "email": "antikirra@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0 || ^8.0"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
