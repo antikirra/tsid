@@ -4,7 +4,7 @@ Generates unique-guaranteed identifiers, based on current timestamp.
 
 ## Install
 
-```bash
+```console
 composer require antikirra/tsid
 ```
 
