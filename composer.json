@@ -5,11 +5,10 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Antikirra\\TSID\\": ""
+      "Antikirra\\": ""
     },
     "files": [
-      "bootstrap.php",
-      "alias.php"
+      "tsid.php"
     ]
   },
   "authors": [
