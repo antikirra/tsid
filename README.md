@@ -5,7 +5,7 @@ Generates unique-guaranteed identifiers, based on current timestamp.
 ## Install
 
 ```console
-composer require antikirra/tsid
+composer require antikirra/tsid:^2.0
 ```
 
 ## Basic usage
