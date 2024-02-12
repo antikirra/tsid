@@ -4,7 +4,7 @@ namespace Antikirra;
 
 use InvalidArgumentException;
 
-if (!function_exists('Antikirra\tsid')) {
+if (!function_exists('Antikirra\\tsid')) {
     /**
      * @return int
      */
@@ -15,7 +15,7 @@ if (!function_exists('Antikirra\tsid')) {
     }
 }
 
-if (!function_exists('Antikirra\tsids')) {
+if (!function_exists('Antikirra\\tsids')) {
     /**
      * @param int $count
      * @return int[]
