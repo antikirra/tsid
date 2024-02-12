@@ -3,7 +3,7 @@
 ![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/antikirra/tsid/php)
 ![Packagist Version](https://img.shields.io/packagist/v/antikirra/tsid)
 
-Generates unique-guaranteed identifiers, based on current timestamp.
+Generates unique and guaranteed identifiers based on the current timestamp.
 
 ## Install
 
