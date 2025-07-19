@@ -22,23 +22,21 @@ if (!function_exists('Antikirra\\tsids')) {
      */
     function tsids($count)
     {
-        static $prev;
+        static $offset = 0;
 
         if (!is_int($count) || $count < 1) {
-            throw new InvalidArgumentException();
+            throw new InvalidArgumentException(
+                sprintf('Expected positive integer for count, got %s', gettype($count))
+            );
         }
 
         $tsids = [];
+
         for ($i = 0; $i < $count; $i++) {
-            while (true) {
-                $curr = (int)(microtime(true) * 1e9);
-                if ($curr > $prev) {
-                    break;
-                }
-            }
-            $prev = $curr;
-            $tsids[] = $curr;
+            $tsids[] = (int)(microtime(true) * 1e9) + (++$offset);
         }
+
+        $offset = 0;
 
         return $tsids;
     }
