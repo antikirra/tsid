@@ -3,13 +3,13 @@
 ![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/antikirra/tsid/php)
 ![Packagist Version](https://img.shields.io/packagist/v/antikirra/tsid)
 
+**Ultra-fast, lightweight PHP library for generating unique timestamp-based identifiers with nanosecond precision.** Perfect for distributed systems, high-throughput applications, and scenarios requiring guaranteed unique ID generation without external dependencies.
+
 ## Install
 
 ```console
 composer require antikirra/tsid:^2
 ```
-
-**Ultra-fast, lightweight PHP library for generating unique timestamp-based identifiers with nanosecond precision.** Perfect for distributed systems, high-throughput applications, and scenarios requiring guaranteed unique ID generation without external dependencies.
 
 ## Why TSID?
 
