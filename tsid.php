@@ -9,8 +9,7 @@ use InvalidArgumentException;
  */
 function tsid()
 {
-    list($tsid) = tsids(1);
-    return $tsid;
+    return tsids(1)[0];
 }
 
 /**
