@@ -18,22 +18,24 @@ function tsid()
  */
 function tsids($count)
 {
-    static $offset = 0;
+    static $prev;
 
     if (!is_int($count) || $count < 1) {
-        throw new InvalidArgumentException(
-            sprintf('Expected positive integer for count, got %s', gettype($count))
-        );
+        throw new InvalidArgumentException();
     }
 
     $tsids = [];
 
     for ($i = 0; $i < $count; $i++) {
-        $tsids[] = (int)(microtime(true) * 1e9) + (++$offset);
+        while (true) {
+            $curr = (int)(microtime(true) * 1e9);
+            if ($curr > $prev) {
+                break;
+            }
+        }
+        $prev = $curr;
+        $tsids[] = $curr;
     }
-
-    $offset = 0;
 
     return $tsids;
 }
-
