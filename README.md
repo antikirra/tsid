@@ -13,22 +13,23 @@ composer require antikirra/tsid:^2
 
 ## Why TSID?
 
-✨ **Blazing Fast Performance** - Zero dependencies, minimal overhead, optimized for speed  
-🔧 **Universal Compatibility** - Works seamlessly from PHP 5.6 to PHP 8.4+  
-⚡ **Nanosecond Precision** - Guaranteed uniqueness even in high-frequency generation  
-🎯 **Snowflake Alternative** - Simple, efficient replacement for complex ID generators  
-📦 **Lightweight** - Just 40 lines of pure PHP code, no bloat  
+✨ **Blazing Fast Performance** - Zero dependencies, minimal overhead, optimized for speed
+🔧 **Universal Compatibility** - Works seamlessly from PHP 5.6 to PHP 8.4+
+⚡ **Nanosecond Precision** - Guaranteed uniqueness even in high-frequency generation
+🎯 **Snowflake Alternative** - Simple, efficient replacement for complex ID generators
+📦 **Lightweight** - Compact, pure PHP implementation with no bloat
 🚀 **Production Ready** - Battle-tested in high-load distributed environments
 
 ## Features
 
 - **High-Performance ID Generation**: Up to 22M+ unique IDs per second
 - **Timestamp-Based**: IDs contain creation time information for easy sorting and analysis
+- **Strictly Monotonic**: Guarantees each ID is always greater than the previous, even during clock adjustments
 - **Collision-Free**: Mathematical guarantee of uniqueness within single process
 - **Memory Efficient**: Minimal memory footprint, perfect for microservices
 - **Legacy Support**: Compatible with ancient PHP versions (5.6+) and modern PHP 8.4
 - **Zero Dependencies**: No external libraries, frameworks, or extensions required
-- **Thread-Safe**: Safe for use in multi-threaded environments (with proper process isolation)
+- **Process-Safe**: Safe for use in single-threaded PHP processes with static state management
 
 ## Perfect for
 
