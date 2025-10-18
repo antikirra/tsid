@@ -8,7 +8,7 @@
 ## Install
 
 ```console
-composer require antikirra/tsid:^2
+composer require antikirra/tsid:^3.0
 ```
 
 ## Why TSID?
