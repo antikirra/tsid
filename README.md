@@ -13,12 +13,12 @@ composer require antikirra/tsid:^3.0
 
 ## Why TSID?
 
-✨ **Blazing Fast Performance** - Zero dependencies, minimal overhead, optimized for speed
-🔧 **Universal Compatibility** - Works seamlessly from PHP 5.6 to PHP 8.4+
-⚡ **Nanosecond Precision** - Guaranteed uniqueness even in high-frequency generation
-🎯 **Snowflake Alternative** - Simple, efficient replacement for complex ID generators
-📦 **Lightweight** - Compact, pure PHP implementation with no bloat
-🚀 **Production Ready** - Battle-tested in high-load distributed environments
+- ✨ **Blazing Fast Performance** - Zero dependencies, minimal overhead, optimized for speed
+- 🔧 **Universal Compatibility** - Works seamlessly from PHP 5.6 to PHP 8.4+
+- ⚡ **Nanosecond Precision** - Guaranteed uniqueness even in high-frequency generation
+- 🎯 **Snowflake Alternative** - Simple, efficient replacement for complex ID generators
+- 📦 **Lightweight** - Compact, pure PHP implementation with no bloat
+- 🚀 **Production Ready** - Battle-tested in high-load distributed environments
 
 ## Features
 
@@ -61,10 +61,6 @@ echo tsid(); // (int) 1752909802717089759
 
 var_dump(tsids(2)); // array(2) { [0] => int(1752909802717089762) [1] => int(1752909802717090791) }
 ```
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Keywords
 
