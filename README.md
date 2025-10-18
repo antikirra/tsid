@@ -22,7 +22,7 @@ composer require antikirra/tsid:^3.0
 
 ## Features
 
-- **High-Performance ID Generation**: Up to 22M+ unique IDs per second
+- **High-Performance ID Generation**: Up to 39M+ unique IDs per second (Apple M4, PHP 8.4)
 - **Timestamp-Based**: IDs contain creation time information for easy sorting and analysis
 - **Strictly Monotonic**: Guarantees each ID is always greater than the previous, even during clock adjustments
 - **Collision-Free**: Mathematical guarantee of uniqueness within single process
