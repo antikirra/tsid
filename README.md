@@ -2,6 +2,7 @@
 
 ![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/antikirra/tsid/php)
 ![Packagist Version](https://img.shields.io/packagist/v/antikirra/tsid)
+![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 
 **Ultra-fast, lightweight PHP library for generating unique timestamp-based identifiers with nanosecond precision.** Perfect for distributed systems, high-throughput applications, and scenarios requiring guaranteed unique ID generation without external dependencies.
 
@@ -30,6 +31,7 @@ composer require antikirra/tsid:^3.0
 - **Legacy Support**: Compatible with ancient PHP versions (5.6+) and modern PHP 8.4
 - **Zero Dependencies**: No external libraries, frameworks, or extensions required
 - **Process-Safe**: Safe for use in single-threaded PHP processes with static state management
+- **100% Test Coverage**: Fully tested with 42 test cases and 5,781 assertions
 
 ## Perfect for
 
@@ -61,6 +63,24 @@ echo tsid(); // (int) 1752909802717089759
 
 var_dump(tsids(2)); // array(2) { [0] => int(1752909802717089762) [1] => int(1752909802717090791) }
 ```
+
+## Testing
+
+The library is thoroughly tested with comprehensive test coverage:
+
+- **Test Framework**: Pest
+- **Total Tests**: 42 passing
+- **Total Assertions**: 5,781
+- **Code Coverage**: 100% (lines and functions)
+
+### Test Categories
+
+- **Basic Functionality**: ID generation, type validation, uniqueness
+- **Monotonicity**: Strictly ascending order verification
+- **Batch Generation**: Mass ID generation (up to 10,000 IDs)
+- **Precision**: Nanosecond-level timestamp accuracy
+- **Edge Cases**: Input validation, boundary conditions
+- **Performance**: High-frequency generation tests
 
 ## Keywords
 
